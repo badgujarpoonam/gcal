@@ -32,7 +32,7 @@
         function checkAuth() {
             gapi.auth.authorize({ client_id: clientId, scope: scopes, immediate: true }, handleAuthResult);
         }
-        alert(authResult);
+        // alert(authResult);
         // show/hide the 'authorize' button, depending on application state
         function handleAuthResult(authResult) {
             var authorizeButton = document.getElementById('authorize-button');
@@ -92,6 +92,7 @@
                 });
             });
         }
+        // alert(resource);
         var resource = {
             "summary": "My Event",
 			"start": {
@@ -148,7 +149,7 @@
 	   } 
  
 
-		</script>
+    </script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad" type="text/javascript"></script>
 </head>
 <body>
