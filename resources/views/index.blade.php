@@ -13,6 +13,10 @@
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
 
+
+    <input type="text" id="myText"/>
+    
+
     <script type="text/javascript">
       /* exported gapiLoaded */
       /* exported gisLoaded */
@@ -112,7 +116,9 @@
         if (token !== null) {
           google.accounts.oauth2.revoke(token.access_token);
           gapi.client.setToken('');
-          document.getElementById('content').innerText = '';
+        //   document.getElementById('content').innerText = '';
+          var iframe = document.getElementById('divifm')
+            iframe.innerHTML = iframe.innerHTML;
           document.getElementById('authorize_button').innerText = 'Authorize';
           document.getElementById('signout_button').style.visibility = 'hidden';
         }
@@ -150,7 +156,13 @@
             (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`,
             'Events:\n');
         document.getElementById('content').innerText = output;
+        document.getElementById("myText").value = output;
+
       }
+    </script>
+    <script>
+    
+        
     </script>
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>

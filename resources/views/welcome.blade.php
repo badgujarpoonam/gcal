@@ -92,7 +92,7 @@
                 });
             });
         }
-        // alert(resource);
+        console.log(resource);
         var resource = {
             "summary": "My Event",
 			"start": {
@@ -198,11 +198,7 @@
                    
                 </div>
                 <div id="divifm">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=ruhi83076%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-                    </iframe>
-                    <!-- <iframe id="ifmCalendar" src="https://www.google.com/calendar/embed?height=550&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=24tn4fht2tr6m86e%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Asia%2FCalcutta"
-                        style="border-width: 0" width="950" height="520" frameborder="0" scrolling="no">
-                    </iframe> -->
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&src=cnVoaTgzMDc2QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
